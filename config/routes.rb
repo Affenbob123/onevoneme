@@ -8,4 +8,5 @@ Rails.application.routes.draw do
   get 'message', to: 'pages#message'
   get 'friends', to: 'pages#friends'
   get 'support', to: 'pages#support'
+  resources :support
 end
