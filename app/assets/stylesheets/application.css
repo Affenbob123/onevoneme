@@ -11,5 +11,40 @@
  * It is generally better to create a new file per style scope.
  *
  *= require_tree .
+ *= require chosen
  *= require_self
  */
+
+@import 'bootstrap-sprockets';
+@import 'bootstrap';
+@import 'bootstrap/theme';
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+.navbar {
+    background-color: orange;
+}
+
+.navbar-brand {
+    font-size: 200%;
+    color: black;
+    margin-right: 75px;
+}
+
+.navbar-default .navbar-brand {
+    color: black;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: black;
+    font-size: 150%;
+    margin-right: 20px;
+}
+
+.alert-notice {
+  display: none;
+}
+
+.nav:nth-child(2) > li:nth-child(1) > a:nth-child(1) {
+    font-size: 90%
+}
